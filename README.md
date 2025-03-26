@@ -56,6 +56,6 @@ pip install -r requirements.txt
 ### Contact
 For any queries, feel free to reach out:
 
-GitHub: viswapriyaaishu
+GitHub: [viswapriyaaishu](https://github.com/viswapriyaaishu)
 
-LinkedIn: sviswapriya
+
