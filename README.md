@@ -41,17 +41,18 @@ Ensure you have **Python 3.8+** installed.
 ```bash
 git clone https://github.com/viswapriyaaishu/Plant-disease-Classifier.git
 cd Plant-disease-Classifier
-
+```
 ### Run the app
 ```bash
 streamlit run main.py
-
+```
 ### LICENSE
 This project is licensed under the MIT License
 
 ### Install Dependencies
 ```bash
 pip install -r requirements.txt
+```
 ### Contact
 For any queries, feel free to reach out:
 
