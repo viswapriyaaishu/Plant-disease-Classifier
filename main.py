@@ -10,7 +10,7 @@ import streamlit as st
 
 print(f"tensor flow version:{tf.__version__}")
 working_dir=os.path.dirname(os.path.abspath(__file__))
-model_path=f"{working_dir}/trained_model/plant_disease_prediction_model.h5"
+model_path=f"{working_dir}/plant_disease_prediction_model.h5"
 print("Model Path:", os.path.abspath(model_path))  # Debugging line
 model=tf.keras.models.load_model(model_path)
 
