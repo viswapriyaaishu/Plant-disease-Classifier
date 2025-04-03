@@ -7,10 +7,15 @@ import numpy as np
 import tensorflow as tf
 import streamlit as st
 
-
+FILE_ID = "15YrUk8gQU2TAsWB3qxXRi8kNdqU28cHU"
+MODEL_URL = f"https://drive.google.com/uc?id={FILE_ID}"
 print(f"tensor flow version:{tf.__version__}")
 working_dir=os.path.dirname(os.path.abspath(__file__))
 model_path=f"{working_dir}/plant_disease_prediction_model.h5"
+
+if not os.path.exists(model_path):
+    st.write("Downloading model from Google Drive...")
+    gdown.download(MODEL_URL, model_path, quiet=False)
 print("Model Path:", os.path.abspath(model_path))  # Debugging line
 model=tf.keras.models.load_model(model_path)
 
